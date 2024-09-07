@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="437"><path fill="%23D6E1FF" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>');
+    background-color: var(--Very-pale-blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container {
+    background-color: white;
+    width: 450px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 15px;
+
+}
+
+.photo svg {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    margin-top: 30px;
+    color: var(--Dark-blue);
+}
+
+.title p {
+    color: var(--Desaturated-blue);
+    padding: 0 50px 0 50px;
+    margin-top: 20px;
+}
+
+.music {
+    height: 95px;
+    margin: 20px 45px 0 45px;
+    padding: 20px;
+    background-color: rgba(247, 244, 244, 0.373);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.letter {
+    margin-right: 80px;
+}
+
+.letter p {
+    color: var(--Desaturated-blue);
+}
+
+.link {
+    padding-top: 18px;
+    color: var(--Bright-blue);
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.link:hover {
+    color: var(--Desaturated-blue);
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+
+.button {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.button button {
+    width: 350px;
+    color: var(--Very-pale-blue);
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    transition: 0.3s ease;
+    height: 45px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.button button:hover {
+    transform: scale(1.1);
+
+}
+
+.button p {
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    margin-top: 20px;
+    padding-bottom: 50px;
+
+}
+.attribution{
+    text-align: center;
+    margin-top:20px;
+}
+
+@media (max-width:375px) {
+    body {
+        background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="375" height="194"><path fill="%23D6E1FF" fill-rule="evenodd" d="M-131.808 155.366c97.026 51.512 204.233 51.512 321.62 0 117.388-51.512 223.27-51.512 317.648 0V0h-639.268v155.366z"/></svg>');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
